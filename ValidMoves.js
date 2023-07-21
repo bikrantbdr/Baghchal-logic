@@ -19,20 +19,20 @@ const Board = {
     //goat 1
     //tiger 0
     board: [
-        [0, 1, 1, 1, 1],
-        [0, 1, 1, 1, 1],
-        [0, 1, 1, 1, 1],
-        [0, 1, 1, 1, null],
-        [1, 1, 1, 1, 1],
+        [0, null, null, null, 0],
+        [null, null, null, null, null],
+        [null, null, null, null, null],
+        [null, null, null, null, null],
+        [0, null, null, null, 0],
     ],
 
     tigers: {
-        trapped: [[0, 0], [1, 0], [2, 0],], //no of trapped tigers
-        position: [[0, 0], [1, 0], [2, 0], [3, 0]]
+        trapped: [], //no of trapped tigers
+        position: []
     },
 
     goats: {
-        onHand: 0,  //initially 20 Goats are in hand to place
+        onHand: 20,  //initially 20 Goats are in hand to place
         killed: 0,   //initially 0 goats are killed
         spaceCaptured: [],
     },
